@@ -124,6 +124,8 @@ function changeProductArrow(direction) {
 const cards = document.querySelectorAll(".card");
 const stackArea = document.querySelector(".stack");
 const containerImg = document.querySelectorAll('.img-container');
+//Convierte el NodeElement a Arreglo para mapearlo
+const containerImgArray = Array.from(containerImg);
 
 //Actualiza el panel de pastillas con la informacion del producto activo
 function updateProductPanel(productKey) {
@@ -132,20 +134,34 @@ function updateProductPanel(productKey) {
     document.querySelector('.pastillas a').href = productos[productKey].enlace;
     document.querySelector('.pastillas a').style.background = productos[productKey].color;
 
-    //Obtiene el contenedor de las imagenes y actualiza su estilo
-    containerImg.forEach((product, index) => {
-        product.style.background = productos[product.dataset.producto].color;
-        product.style.transform = ` rotate(-${index*10}deg)`
-        product.style.zIndex = containerImg.length - index;
+    //Mapea cada uno de los contenedores
+    const zIndexMap = containerImgArray.map((_, i) => containerImg.length - i);
 
-        var temporal = productos[productKey].zIndex
-        if(product.dataset.producto != productKey){
-            var zIndex = productos[productKey].zIndex;
-            if(zIndex < getComputedStyle(product).zIndex){
-                product.style.transform = `translateX(-100vw) rotate(-48deg)`;
-            }
-        }else{
-            product.style.transform = `rotate(0deg)`
+    // Obtener index del producto activo
+    const activeIndex = [...containerImg].findIndex(
+        p => p.dataset.producto === productKey
+    );
+
+    //Por cada uno de los contenedores
+    containerImg.forEach((product, i) => {
+        const angle = (i-activeIndex) * 10;
+        product.style.background = productos[product.dataset.producto].color;
+        product.style.zIndex = zIndexMap[i];
+
+        //Si es el producto activo, que esté recto
+        if (i === activeIndex) {
+            product.style.transform = `rotate(0deg)`;
+            return;
+        }
+
+        //Si el producto aun no ha pasado
+        if (i-activeIndex > 0) {
+            //Actualiza el angulo
+            product.style.transform = `rotate(-${angle}deg)`;
+        } 
+        //Si ya pasó, sale de la pantalla
+        else {
+            product.style.transform = `translateX(-100vw) rotate(${angle}deg)`;
         }
     })
 }
