@@ -141,16 +141,10 @@ section{
     .left{
         height: 100vh;
     }
+}
 
-    .card{
-        width: 250px;
-        height: 250px;
-        top: calc(50% - 125px);
-        left: calc(50% - 125px);
-    }
-
-    .right{
-        top: 25%;
-        right: 50%;
+@media screen and (max-height: 740px) {
+    .img-container img{
+        height: 170px;
     }
 }
