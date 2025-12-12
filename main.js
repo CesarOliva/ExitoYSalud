@@ -6,7 +6,7 @@ const productos = {
                 'proteínas disponibles para el consumo. Ha demostrado clínicamente su capacidad para incrementar los niveles de glutatión '+
                 'en el organismo.',
         imagen: 'Imagenes/MX.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal',
         color: '#00348e'
     },
     Platinum: {
@@ -14,7 +14,7 @@ const productos = {
         texto: 'Immunocal Platinum ofrece una solución completa que promueve un envejecimiento saludable. Esta fórmula avanzada une los beneficios fundamentales '+
                 'de Immunocal con dos componentes innovadores, ofreciendo un enfoque completo hacia el bienestar y la longevidad.',
         imagen: 'Imagenes/Platinum.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-platinum',
         color: '#6f7074'
     },
     Sport: {
@@ -22,7 +22,7 @@ const productos = {
         texto: 'Fórmula avanzada diseñada para optimizar la salud inmunológica y cardiovascular, mejorando simultáneamente el rendimiento físico general. '+
                 'Induce la vasodilatación y mejora el flujo sanguíneo, beneficiando tanto a órganos internos como al tejido muscular.',
         imagen: 'Imagenes/Sport.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-sport',
         color: '#141414'
     },
     Optimizer: {
@@ -31,21 +31,21 @@ const productos = {
                 'El aliado perfecto para ayudar a combatir el estrés oxidativo, así como '+
                 'favorecer la salud cardiovascular y luchar contra la inflamación.',
         imagen: 'Imagenes/Optimizer.png',        
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster',
         color: '#5c9e1f'
     },
     Performance: {
         nombre: "IMMUNOCAL OPTIMIZER PERFORMANCE",
         texto: 'Enriquecido con fuentes naturales de cafeína como el guaraná, el té verde y el extracto de café verde, junto con selenio y vitaminas C y B12. Este catalizador ayuda a combatir el cansancio y la fatiga y protegerte contra el estrés oxidativo.',
         imagen: 'Imagenes/Performance.png',   
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster-energy-performance',
         color: '#fe9300'
     },
     Jamaica: {
         nombre: "OPTIMIZER PERFORMANCE FLOR DE JAMAICA",
         texto: 'Enriquecido con fuentes naturales de cafeína como el guaraná, el té verde y el extracto de café verde, junto con selenio y vitaminas C y B12. Este catalizador ayuda a combatir el cansancio y la fatiga y protegerte contra el estrés oxidativo.',
         imagen: 'Imagenes/Jamaica.png',   
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster-energy-hibiscus',
         color: '#ed1c35'
     },
     Resveratrol: {
@@ -53,43 +53,52 @@ const productos = {
         texto: 'Multi+Resveratrol es una fórmula excepcional '+
                 'compuesta por 21 vitaminas, minerales y nutrientes esenciales, incluye componentes únicos como la clorela y el resveratrol.',
         imagen: 'Imagenes/Resveratrol.png',   
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/multi-resveratrol',
         color: '#12a561',
-        zIndex: 5
+        zIndex: 6
     },
     Probiotico: {
         nombre: "PROBIOTICO 3+",
         texto: 'Probio 3+ es un simbiótico altamente efectivo que combina probióticos y extracto de arándano rojo rico '+
                 'en antioxidantes para promover un sistema digestivo más saludable.',
         imagen: 'Imagenes/Probiotico.png',   
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/probio3',
         color: '#cc3848',
-        zIndex: 4
+        zIndex: 5
     },
     KLC:{
         nombre: "KLC-D",
         texto: 'KLC-D garantiza una absorción mineral óptima, convirtiéndolo en la elección ideal para el fortalecimiento y crecimiento óseo.',
         imagen: 'Imagenes/Calcio.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/calcium',
         color: '#d36849',
-        zIndex: 3
+        zIndex: 4
     },
     Bionutric:{
         nombre: "BIONUTRIC",
         texto: 'Bionutric es una fórmula única con seis ingredientes para ayudar a mejorar la salud de las articulaciones, frenar el deterioro articular '+
                 ' y reduce la inflamación.',
         imagen: 'Imagenes/Bionutric.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/contralenta',
         color: '#4d1187',
-        zIndex: 2
+        zIndex: 3
     },
     Omega:{
         nombre: "OMEGA GEN V",
         texto: 'Omega Gen V, diseñado para apoyar tu salud cardíaca, cerebral y general. Fórmula de cinco componentes distingida de otros productos'+
                 ' convirtiéndola en una solución superior y conveniente para el bienestar general.',
         imagen: 'Imagenes/Omega.png',
-        enlace: '#',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/omega-gen-v',
         color: '#f5a562',
+        zIndex: 2
+    },
+    Zenity:{
+        nombre: "ZENITY",
+        texto: 'Suplemento para dormir de doble acción, sin melatonina, diseñado para ayudar a tu mente y cuerpo a relajarse de forma natural. Esta'+
+                ' fórmula apoya un sueño más profundo, noches más tranquilas y mañanas más claras sin fármacos.',
+        imagen: 'Imagenes/Zenity.png',
+        enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/serent200',
+        color: '#54367c',
         zIndex: 1
     }
 }
@@ -144,7 +153,7 @@ function updateProductPanel(productKey) {
 
     //Por cada uno de los contenedores
     containerImg.forEach((product, i) => {
-        const angle = (i-activeIndex) * 10;
+        const angle = (i-activeIndex) * 8;
         product.style.background = productos[product.dataset.producto].color;
         product.style.zIndex = zIndexMap[i];
 
@@ -181,7 +190,7 @@ function rotateCards() {
             card.style.transform = `translateY(-120vh) rotate(-48deg)`;
         } else {
             card.style.transform = ` rotate(${angle}deg)`;
-            angle = angle - 10;
+            angle = angle - 8;
             card.style.zIndex = cards.length - index;
         }
     });
@@ -190,7 +199,7 @@ function rotateCards() {
 rotateCards();
 
 window.addEventListener("scroll", () => {
-    let distance = window.innerHeight * 0.45;
+    let distance = window.innerHeight * 0.35;
     let topVal = stackArea.getBoundingClientRect().top;
     let index = -1 * (topVal / distance + 1);
 
