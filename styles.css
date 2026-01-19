@@ -10,6 +10,23 @@ body {
     height: fit-content;
     margin: 0;
     padding: 0;
+    background-color: #f8fafc;
+}
+
+.whatsapp{
+    width: 80px;
+    height: 80px;
+    float: right;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.whatsapp img{
+    width: 80px;
+    height: 80px;
+    opacity: .7;
+    z-index: 1000;
 }
 
 @font-face {
@@ -33,7 +50,8 @@ section{
 #nombre,
 .stack h2,
 .prod h2,
-h2.titulos{
+h2.titulos,
+.promos button a{
     font-family: 'Neue Haas Grotesk', sans-serif;
 }
 
@@ -227,6 +245,15 @@ h2.titulos{
 
     .left{
         height: 100vh;
+    }
+
+    .whatsapp{
+        width: 70px;
+        height: 70px;
+    }
+    .whatsapp img{
+        width: 70px;
+        height: 70px;
     }
 }
 
