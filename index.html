@@ -7,12 +7,17 @@
     <title>Éxito y Salud | Consultora Independiente Immunotec en México</title>
 
     <meta name="author" content="César Oliva">
+    <meta name="creator" content="César Oliva">
     <meta name="description" content="Consultora independiente de Immunotec en México. Descubre suplementos de salud, bienestar y antioxidantes con asesoría personalizada para mejorar tu calidad de vida.">
     <meta name="keywords" content="Immunotec México, consultor Immunotec, suplementos Immunotec, Immunocal, antioxidantes, salud y bienestar, suplementos alimenticios">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#00348e">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://saravazquez.com.mx/">
+    <link rel="alternate" href="https://saravazquez.com.mx/" hreflang="es-MX">
+    <link rel="alternate" href="https://saravazquez.com.mx/" hreflang="x-default">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Éxito y Salud | Consultora Independiente Immunotec">
@@ -26,25 +31,70 @@
     <meta property="og:site_name" content="Éxito y Salud">
     <meta property="og:locale" content="es_MX">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Éxito y Salud | Consultora Independiente Immunotec">
+    <meta name="twitter:description" content="Conoce suplementos Immunotec en México y recibe asesoría personalizada para bienestar y salud.">
+    <meta name="twitter:image" content="https://saravazquez.com.mx/Imagenes/logo.png">
+
     <!-- Recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="Imagenes/perfil.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/17383348a8.js" crossorigin="anonymous"></script>    
+    <script defer src="https://kit.fontawesome.com/17383348a8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "name": "Éxito y Salud",
+                "url": "https://saravazquez.com.mx/",
+                "inLanguage": "es-MX",
+                "description": "Consultora independiente de Immunotec en México con asesoría personalizada en salud y bienestar."
+            },
+            {
+                "@type": "Person",
+                "name": "Sara Vázquez",
+                "jobTitle": "Consultora Independiente Immunotec",
+                "url": "https://saravazquez.com.mx/",
+                "image": "https://saravazquez.com.mx/Imagenes/perfil.jpg",
+                "sameAs": [
+                    "https://wa.me/528126239665"
+                ]
+            },
+            {
+                "@type": "Organization",
+                "name": "Éxito y Salud",
+                "url": "https://saravazquez.com.mx/",
+                "logo": "https://saravazquez.com.mx/Imagenes/logo.png",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Sara Vázquez"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    <section class="info min-h-[100vh] py-8 flex flex-col md:flex-row justify-center items-center">
+    <header class="info min-h-[100vh] py-8 flex flex-col md:flex-row justify-center items-center">
         <div class="m-6">
-            <img src="Imagenes/perfil.jpg" alt="Sara Vázquez" class="rounded-2xl object-cover max-h-[450px] w-[350px]">
+            <img src="Imagenes/perfil.jpg" alt="Sara Vázquez" width="350" height="450" fetchpriority="high" decoding="async" class="rounded-2xl object-cover max-h-[450px] w-[350px]">
         </div>
         <div class="flex flex-col items-center md:items-start justify-center max-w-[500px] p-6">
-            <h3 class="text-4xl text-center md:text-start font-[600] mb-2">Sara Vázquez</h3>
+            <h1 class="text-4xl text-center md:text-start font-[600] mb-2">Sara Vázquez</h1>
             <p class="text-xl text-center md:text-start font-[300] mb-2">Consultora Independiente. Acompañamiento profesional con la calidad y confianza que solo Immunotec puede ofrecer.</p>
-            <a href="http://wa.me/8126239665" class="bg-[#262626] text-white rounded-xl font-[500] text-[18px] w-[150px] h-[40px] flex justify-center items-center">Contáctame</a>
+            <a href="https://wa.me/528126239665" class="bg-[#262626] text-white rounded-xl font-[500] text-[18px] w-[150px] h-[40px] flex justify-center items-center">Contáctame</a>
         </div>
-    </section>
+    </header>
 
+    <main>
     <section class="immunocal relative w-full min-h-screen p-8 md:p-16 lg:p-24 2xl:p-36 bg-[#00348e] flex">
         <div class="w-full flex justify-center md:justify-between flex-wrap items-center">
             <div class="flex flex-col items-center md:items-start text-white w-full md:w-[50%] max-w-xl order-1 md:order-0">
@@ -54,18 +104,18 @@
                     proteínas disponibles para el consumo. Ha demostrado clínicamente su capacidad para incrementar los niveles de glutatión 
                     en el organismo.
                 </p>
-                <a target="_blank" id="enlace" class="flex justify-center items-center bg-white rounded-xl text-[#1e1e1e] font-[500] text-[18px] w-[110px] h-[38px]" href="https://www.immunotec.com/es-MX/saravazquez/products/immunocal">Comprar</a>
+                <a target="_blank" rel="noopener noreferrer" id="enlace" class="flex justify-center items-center bg-white rounded-xl text-[#1e1e1e] font-[500] text-[18px] w-[110px] h-[38px]" href="https://www.immunotec.com/es-MX/saravazquez/products/immunocal">Comprar</a>
             </div>
             <div class="order-0 md:order-1 w-full md:w-[50%] max-w-[550px] flex justify-center items-center">
-                <img id="imagen" src="Imagenes/MX.png" alt="Producto" class="flex justify-center max-h-[300px] md:max-h-[400px]">
+                <img id="imagen" src="Imagenes/MX.png" alt="Producto" loading="eager" decoding="async" class="flex justify-center max-h-[300px] md:max-h-[400px]">
             </div>
             <ul class="hidden md:flex thumb">
-                <li><img src="Imagenes/MX.png" onclick="changeProduct('immunocal', 'MX')" alt="Immunocal MX"></li>
-                <li><img src="Imagenes/Platinum.png" onclick="changeProduct('immunocal', 'Platinum')" alt="Immunocal Platinum"></li>
-                <li><img src="Imagenes/Sport.png" onclick="changeProduct('immunocal', 'Sport')" alt="Immunocal Sport"></li>
-                <li><img src="Imagenes/Optimizer.png" onclick="changeProduct('immunocal', 'Optimizer')" alt="Immunocal Optimizer"></li>
-                <li><img src="Imagenes/Performance.png" onclick="changeProduct('immunocal', 'Performance')" alt="Immunocal Optimizer Performance"></li>
-                <li><img src="Imagenes/Jamaica.png" onclick="changeProduct('immunocal', 'Jamaica')" alt="Optimizer Naranja" class="h-16"></li>
+                <li><img src="Imagenes/MX.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'MX')" alt="Immunocal MX"></li>
+                <li><img src="Imagenes/Platinum.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'Platinum')" alt="Immunocal Platinum"></li>
+                <li><img src="Imagenes/Sport.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'Sport')" alt="Immunocal Sport"></li>
+                <li><img src="Imagenes/Optimizer.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'Optimizer')" alt="Immunocal Optimizer"></li>
+                <li><img src="Imagenes/Performance.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'Performance')" alt="Immunocal Optimizer Performance"></li>
+                <li><img src="Imagenes/Jamaica.png" loading="lazy" decoding="async" onclick="changeProduct('immunocal', 'Jamaica')" alt="Optimizer Naranja" class="h-16"></li>
             </ul>
 
             <div class="flex w-full justify-between justify-center items-center gap-6 mt-4 md:hidden">
@@ -73,7 +123,6 @@
                         class="w-10 h-10 flex justify-center items-center rounded-full bg-white/80 text-black text-2xl font-bold shadow">
                     ‹
                 </button>
-
                 <button onclick="changeProductArrow('next')" 
                         class="w-10 h-10 flex justify-center items-center rounded-full bg-white/80 text-black text-2xl font-bold shadow">
                     ›
@@ -87,22 +136,22 @@
             <!--SE SOLUCIONARIA EL AJUSTADO A TODOS DISPOSITIVOS SI PONGO UN DIV DE TAMANO ESTATICO Y ADENTRO RELATIVE EL IMAGENES -->
             <div class="md:hidden imagenes">
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="Resveratrol">
-                    <img src="Imagenes/Resveratrol.png" class="h-[200px]" alt="Multi Resveratrol">
+                    <img src="Imagenes/Resveratrol.png" loading="lazy" decoding="async" class="h-[200px]" alt="Multi Resveratrol">
                 </div>
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="Probiotico">
-                    <img src="Imagenes/Probiotico.png" class="h-[200px]" alt="Probiotico 3+">
+                    <img src="Imagenes/Probiotico.png" loading="lazy" decoding="async" class="h-[200px]" alt="Probiotico 3+">
                 </div>
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="KLC">
-                    <img src="Imagenes/Calcio.png" class="h-[200px]" alt="KLC D">
+                    <img src="Imagenes/Calcio.png" loading="lazy" decoding="async" class="h-[200px]" alt="KLC D">
                 </div>
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="Bionutric">
-                    <img src="Imagenes/Bionutric.png" class="h-[200px]" alt="Bionutric">
+                    <img src="Imagenes/Bionutric.png" loading="lazy" decoding="async" class="h-[200px]" alt="Bionutric">
                 </div>
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="Omega">
-                    <img src="Imagenes/Omega.png" class="h-[200px]" alt="Omega Gen V">
+                    <img src="Imagenes/Omega.png" loading="lazy" decoding="async" class="h-[200px]" alt="Omega Gen V">
                 </div>
                 <div class="img-container mb-8 p-6 rounded-2xl" data-producto="Zenity">
-                    <img src="Imagenes/Zenity.png" class="h-[200px]" alt="Zenity">
+                    <img src="Imagenes/Zenity.png" loading="lazy" decoding="async" class="h-[200px]" alt="Zenity">
                 </div>
             </div>
             <div class="mt-[280px] md:mt-[0px] text-center md:text-start flex flex-col items-center md:items-start">
@@ -111,7 +160,7 @@
                     Multi+Resveratrol es una fórmula excepcional que va más allá de los multivitamínicos tradicionales. 
                     Compuesta por 21 vitaminas, minerales y nutrientes esenciales, incluye componentes únicos como la clorela y el resveratrol. 
                 </p>
-                <a target="_blank" class="flex justify-center items-center bg-[#12a561] rounded-xl text-white font-[500] text-[18px] w-[110px] h-[38px]" href="#">Comprar</a>
+                <a target="_blank" rel="noopener noreferrer" class="flex justify-center items-center bg-[#12a561] rounded-xl text-white font-[500] text-[18px] w-[110px] h-[38px]" href="https://www.immunotec.com/es-MX/saravazquez/products/multi-resveratrol">Comprar</a>
             </div>
         </div>
         <div class="hidden md:flex right overflox-x-hidden">
@@ -136,7 +185,7 @@
         </div>
     </section>
 
-    <section class="flex justify-center flex-wrap min-h-[100vh]">
+    <section class="flex justify-center flex-wrap min-h-[100vh] mt-8 md:mt-0">
         <h2 class="titulos flex items-end mx-6 text-center text-4xl font-bold">CONOCE OTROS PRODUCTOS DE IMMUNOTEC</h2>
         <div class="contenedor-otros flex flex-wrap justify-around items-center ">
             <div class="prod relative flex items-center w-[300px] hover:w-[600px] h-[350px] m-[20px] rounded-xl">
@@ -147,7 +196,7 @@
                     <div class="textos text-center md:text-start w-full md:w-[60%] p-[20px]">
                         <h2 class="text-white text-4xl md:text-5xl font-bold">WIMMSS</h2>
                         <p class="text-lg text-white mb-[10px]">Wimms ofrece una nutrición de calidad con un delicioso sabor tropical, enriquecida por la tecnología de Omega-3 con una absorción hasta un 44% más rápida.</p>
-                        <a target="_blank" class="text-[#a8cdd5] bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/wimms">Comprar</a>
+                        <a target="_blank" rel="noopener noreferrer" class="text-[#a8cdd5] bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/wimms">Comprar</a>
                     </div>
                     <div class="img w-full flex justify-center items-center md:w-[40%]">
                         <img class="md:max-h-[40vh] max-h-[30vh] w-auto md:w-full" src="Imagenes/Wimms.png" alt="Wimms">
@@ -162,7 +211,7 @@
                     <div class="textos text-center md:text-start w-full md:w-[60%] p-[20px]">
                         <h2 class="text-white text-4xl md:text-5xl font-bold">SHAKE IT UP</h2>
                         <p class="text-lg text-white mb-[10px]">Mezcla de aislado de proteína de suero de leche y concentrado de proteína de leche, formulada específicamente para ayudar en el control del peso. </p>
-                        <a target="_blank" class="text-[#9b8eb4] bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/shake-it-up-chocolate">Comprar</a>
+                        <a target="_blank" rel="noopener noreferrer" class="text-[#9b8eb4] bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/shake-it-up-chocolate">Comprar</a>
                     </div>
                     <div class="img w-full flex justify-center items-center md:w-[40%]">
                         <img class="md:max-h-[40vh] max-h-[30vh] w-auto md:w-full" src="Imagenes/ShakeItUp.png" alt="Shake It Up">
@@ -177,7 +226,7 @@
                     <div class="textos text-center md:text-start w-full md:w-[60%] p-[20px]">
                         <h2 class="text-black text-4xl md:text-5xl font-bold">KNUTRIC+</h2>
                         <p class="text-lg text-black mb-[10px]">K-21+®es una solución basada en plantas diseñada para ayudarte a equilibrar tu cuerpo y mente.</p>
-                        <a target="_blank" class="text-black bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/k-21">Comprar</a>
+                        <a target="_blank" rel="noopener noreferrer" class="text-black bg-[#fff] py-[10px] px-[20px] rounded-lg font-[600]" href="https://www.immunotec.com/es-MX/saravazquez/products/k-21">Comprar</a>
                     </div>
                     <div class="img w-full flex justify-center items-center md:w-[40%]">
                         <img class="md:max-h-[40vh] max-h-[300vh] w-auto md:w-full" src="Imagenes/Knutric.png" alt="Knutric">
@@ -187,45 +236,77 @@
         </div>
     </section>
 
-    <section class="promos flex justify-center flex-col items-center flex-wrap min-h-[100vh]">
-        <h2 class="titulos flex items-end mx-6 text-center text-4xl font-bold">PROMOCIONES DEL MES</h2>
-        <div class="flex flex-wrap justify-around items-center mt-6 gap-6">
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[400px]">
-                <img src="Imagenes/Paquete1.webp" alt="Paquete 1" class="w-[300px] h-[300px] object-cover">
-                <div class="flex flex-col gap-y-1">
-                    <h2 class="titulos text-xl">P. CLIENTES MEJOR BIENESTAR BASICO</h2>
-                    <p class="text-md text-gray-600">Incluye: 1 Immunocal MX, 1 Immunocal Platinum</p>
-                    <span class="text-xl font-semibold mb-2">MXN $4,298.00</span>
-                    <button class="bg-[#f7ec32] text-lg rounded-md py-1"><a target="_blank" href="#">COMPRAR</a></button>
-                </div>
-                
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[400px]">
-                <img src="Imagenes/Paquete1.webp" alt="Paquete 1" class="w-[300px] h-[300px] object-cover">
-                <div class="flex flex-col gap-y-1">
-                    <h2 class="titulos text-xl">P. CLIENTES MEJOR BIENESTAR BASICO</h2>
-                    <p class="text-md">Incluye: 1 Immunocal MX, 1 Immunocal Platinum</p>
-                    <span class="text-xl font-semibold">MXN $4,298.00</span>
-                    <button class="bg-[#f7ec32] text-lg rounded-md py-1"><a target="_blank" href="#">COMPRAR</a></button>
+    <section class="promos flex justify-center flex-col items-center flex-wrap min-h-[100vh] px-8 mt-6 mb-12">
+        <h2 class="titulos flex items-end text-center text-4xl font-bold">PROMOCIONES DEL MES</h2>
+        <div class="flex flex-wrap justify-around items-stretch mt-6 gap-6">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[350px]">
+                <img src="Imagenes/PaqueteOptimizer.webp" loading="lazy" decoding="async" alt="Paquete Optimizer" class="w-[300px] h-[300px] object-cover">
+                <div class="flex flex-col w-full gap-y-1 h-full justify-between">
+                    <div class="">
+                        <h2 class="titulos text-lg font-semibold">PAQUETE OPTIMIZER</h2>
+                        <p class="text-md text-gray-600">Incluye: 1 Immunocal MX, 1 Immunocal Platinum, 1 Immunocal Optimizer</p>
+                        <span class="text-lg font-semibold mb-2">MXN $3,659.00</span>
+                    </div>
+                    <button class="bg-[#f7ec32] text-md rounded-lg py-1"><a target="_blank" rel="noopener noreferrer" href="https://www.immunotec.com/es-MX/saravazquez/products/as-1200409-paquete-optimizer-mx">COMPRAR</a></button>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[400px]">
-                <img src="Imagenes/Paquete1.webp" alt="Paquete 1" class="w-[300px] h-[300px] object-cover">
-                <div class="flex flex-col gap-y-1">
-                    <h2 class="titulos text-xl">P. CLIENTES MEJOR BIENESTAR BASICO</h2>
-                    <p class="text-md">Incluye: 1 Immunocal MX, 1 Immunocal Platinum</p>
-                    <span class="text-xl font-semibold">MXN $4,298.00</span>
-                    <button class="bg-[#f7ec32] text-lg rounded-md py-1"><a target="_blank" href="#">COMPRAR</a></button>
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[350px]">
+                <img src="Imagenes/Immunocalx4.webp" loading="lazy" decoding="async" alt="Paquete Immunocal x4" class="w-[300px] h-[300px] object-cover">
+                <div class="flex flex-col w-full gap-y-1 h-full justify-between">
+                    <div>
+                        <h2 class="titulos text-lg font-semibold">PAQUETE IMMUNOCAL X4</h2>
+                        <p class="text-md text-gray-600">Incluye: 4 Immunocal MX</p>
+                        <span class="text-lg font-semibold mb-2">MXN $5,049.00</span>
+                    </div>
+                    <button class="bg-[#f7ec32] text-md rounded-lg py-1"><a target="_blank" rel="noopener noreferrer" href="https://www.immunotec.com/es-MX/saravazquez/products/cn-immunocal-x4">COMPRAR</a></button>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition flex flex-col items-center max-w-[350px]">
+                <img src="Imagenes/Basico2x2.webp" loading="lazy" decoding="async" alt="Paquete Basico 2x2" class="w-[300px] h-[300px] object-cover">
+                <div class="flex flex-col w-full gap-y-1 h-full justify-between">
+                    <div>
+                        <h2 class="titulos text-lg font-semibold">PAQUETE BASICO 2X2</h2>
+                        <p class="text-md text-gray-600">Incluye: 2 Immunocal MX, 2 Immunocal Platinum</p>
+                        <span class="text-lg font-semibold mb-2">MXN $5,359.00</span>
+                    </div>
+                    <button class="bg-[#f7ec32] text-md rounded-lg py-1"><a target="_blank" rel="noopener noreferrer" href="https://www.immunotec.com/es-MX/saravazquez/products/cn-bienestar-basico-2-2">COMPRAR</a></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="whatsapp" id="wpp">
-        <a target="_blank" href="https://wa.me/8126239665">
-            <img src="imagenes/WhatsApp.png" alt="whatsapp">
-        </a>
-    </section>
+    </main>
+
+    <footer class="bg-[#00348e] text-white py-12 px-4 md:px-16">
+        <div class="container max-w-[1140px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-center md:text-start text-2xl font-bold">Sara Vázquez</h3>
+                    <p class="text-gray-300 text-center md:text-start mt-2">Consultora independiente de Immunotec</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/profile.php?id=61554643567758" target="_blank">
+                        <i class="fa-brands fa-facebook text-4xl text-gray-300 hover:text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/saritavazquez.a/" target="_blank">
+                        <i class="fa-brands fa-instagram text-4xl text-gray-300 hover:text-white"></i>
+                    </a>
+                    <a href="https://wa.me/528126239665" target="_blank" class="text-gray-300 hover:text-white transition">
+                        <i class="fa-brands fa-whatsapp text-4xl text-gray-300 hover:text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-200 mt-8 pt-8 text-center text-md">
+                <p>© 2026 Sara Vázquez</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-5 right-5 z-50">
+        <a href="https://wa.me/528126239665" target="_blank" rel="noopener noreferrer"><img src="/Imagenes/WhatsApp.png" loading="lazy" decoding="async" alt="Contáctanos por WhatsApp" class="w-16 md:w-18"></a>
+    </div>
 
     <script src="main.js"></script>
 </body>
