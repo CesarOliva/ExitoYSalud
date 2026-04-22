@@ -22,6 +22,60 @@ body {
     background: url('Imagenes/bg-textura.png');
 }
 
+/* Mi historia */
+.historia {
+    background: #f8fafc;
+}
+
+.historia-panel {
+    background: rgba(255, 255, 255, .88);
+    border: 1px solid #dbeafe;
+    backdrop-filter: blur(5px);
+}
+
+.historia-badge {
+    color: #ffffff;
+    background: linear-gradient(90deg, #00348e 0%, #0e7490 100%);
+}
+
+.historia-impacto {
+    background: linear-gradient(160deg, #dcfce7 0%, #ecfeff 100%);
+    border-left: 6px solid #12a561;
+}
+
+.historia-mini-card {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 12px 28px rgba(0, 52, 142, .08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.historia-mini-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 32px rgba(0, 52, 142, .14);
+}
+
+.historia-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00348e 0%, #12a561 100%);
+}
+
+.historia-cta {
+    color: #ffffff;
+    background: linear-gradient(90deg, #12a561 0%, #0f9d58 100%);
+}
+
+.historia-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(18, 165, 97, .35);
+}
+
 /*Cajas Immunocal*/
 section{
     transition: .5s;
@@ -202,6 +256,46 @@ h2.titulos,
     transition-delay: .5s;
 }
 
+/* Testimonios */
+.testimonios {
+    background: #f8fafc;
+}
+
+.testimonio-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.testimonio-card::before {
+    content: '\201C';
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 48px;
+    line-height: 1;
+    color: #bfdbfe;
+    font-family: 'Neue Haas Grotesk', sans-serif;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 52, 142, .16);
+}
+
+.avatar-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    background: #00348e;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 968px) {
     .card{
         width: 300px;
@@ -225,6 +319,10 @@ h2.titulos,
     .left,
     .right{
         flex-basis: auto;
+    }
+
+    .historia-glow {
+        opacity: .3;
     }
 
     .left{

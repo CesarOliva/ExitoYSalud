@@ -7,6 +7,7 @@ const productos = {
                 'en el organismo.',
         imagen: 'Imagenes/MX.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Immunocal MX.',
         color: '#00348e'
     },
     Platinum: {
@@ -15,6 +16,7 @@ const productos = {
                 'de Immunocal con dos componentes innovadores, ofreciendo un enfoque completo hacia el bienestar y la longevidad.',
         imagen: 'Imagenes/Platinum.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-platinum',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Immunocal Platinum.',
         color: '#6f7074'
     },
     Sport: {
@@ -23,6 +25,7 @@ const productos = {
                 'Induce la vasodilatación y mejora el flujo sanguíneo, beneficiando tanto a órganos internos como al tejido muscular.',
         imagen: 'Imagenes/Sport.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-sport',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Immunocal Sport.',
         color: '#141414'
     },
     Optimizer: {
@@ -32,6 +35,7 @@ const productos = {
                 'favorecer la salud cardiovascular y luchar contra la inflamación.',
         imagen: 'Imagenes/Optimizer.png',        
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Immunocal Optimizer.',
         color: '#5c9e1f'
     },
     Performance: {
@@ -39,6 +43,7 @@ const productos = {
         texto: 'Enriquecido con fuentes naturales de cafeína como el guaraná, el té verde y el extracto de café verde, junto con selenio y vitaminas C y B12. Este catalizador ayuda a combatir el cansancio y la fatiga y protegerte contra el estrés oxidativo.',
         imagen: 'Imagenes/Performance.png',   
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster-energy-performance',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Immunocal Optimizer Performance.',
         color: '#fe9300'
     },
     Jamaica: {
@@ -46,6 +51,7 @@ const productos = {
         texto: 'Enriquecido con fuentes naturales de cafeína como el guaraná, el té verde y el extracto de café verde, junto con selenio y vitaminas C y B12. Este catalizador ayuda a combatir el cansancio y la fatiga y protegerte contra el estrés oxidativo.',
         imagen: 'Imagenes/Jamaica.png',   
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/immunocal-booster-energy-hibiscus',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Optimizer Performance Flor de Jamaica.',
         color: '#ed1c35'
     },
     Resveratrol: {
@@ -54,6 +60,7 @@ const productos = {
                 'compuesta por 21 vitaminas, minerales y nutrientes esenciales, incluye componentes únicos como la clorela y el resveratrol.',
         imagen: 'Imagenes/Resveratrol.png',   
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/multi-resveratrol',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Multi + Resveratrol.',
         color: '#12a561',
         zIndex: 6
     },
@@ -63,6 +70,7 @@ const productos = {
                 'en antioxidantes para promover un sistema digestivo más saludable.',
         imagen: 'Imagenes/Probiotico.png',   
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/probio3',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Probiotico 3+.',
         color: '#cc3848',
         zIndex: 5
     },
@@ -71,6 +79,7 @@ const productos = {
         texto: 'KLC-D garantiza una absorción mineral óptima, convirtiéndolo en la elección ideal para el fortalecimiento y crecimiento óseo.',
         imagen: 'Imagenes/Calcio.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/calcium',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre KLC-D.',
         color: '#d36849',
         zIndex: 4
     },
@@ -80,6 +89,7 @@ const productos = {
                 ' y reduce la inflamación.',
         imagen: 'Imagenes/Bionutric.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/contralenta',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Bionutric.',
         color: '#4d1187',
         zIndex: 3
     },
@@ -89,6 +99,7 @@ const productos = {
                 ' convirtiéndola en una solución superior y conveniente para el bienestar general.',
         imagen: 'Imagenes/Omega.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/omega-gen-v',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Omega Gen V.',
         color: '#f5a562',
         zIndex: 2
     },
@@ -98,6 +109,7 @@ const productos = {
                 ' fórmula apoya un sueño más profundo, noches más tranquilas y mañanas más claras sin fármacos.',
         imagen: 'Imagenes/Zenity.png',
         enlace: 'https://www.immunotec.com/es-MX/saravazquez/products/serent200',
+        contacto: 'https://wa.me/528126239665?text=Hola quiero más información sobre Zenity.',
         color: '#54367c',
         zIndex: 1
     }
@@ -113,6 +125,7 @@ function changeProduct(section, product){
     document.querySelector('.'+section+' #texto').innerHTML = productos[product].texto;
     document.querySelector('.'+section+' #imagen').src = productos[product].imagen;
     document.querySelector('.'+section+' #enlace').href = productos[product].enlace;
+    document.querySelector('.'+section+' #contacto').href = productos[product].contacto;
     document.querySelector('.'+section).style.background = productos[product].color;
 }
 
@@ -120,7 +133,7 @@ function changeProduct(section, product){
 function changeProductArrow(direction) {
     if (direction === "next") {
         currentIndex = (currentIndex + 1) % productOrder.length;
-    } else if (direction === "prev") {
+    } else if (direction === "sprev") {
         currentIndex = (currentIndex - 1 + productOrder.length) % productOrder.length;
     }
 
@@ -140,7 +153,8 @@ const containerImgArray = Array.from(containerImg);
 function updateProductPanel(productKey) {
     document.querySelector('.pastillas h2').innerHTML = productos[productKey].nombre;
     document.querySelector('.pastillas p').innerHTML = productos[productKey].texto;
-    document.querySelector('.pastillas a').href = productos[productKey].enlace;
+    document.querySelector('.pastillas a#comprar').href = productos[productKey].enlace;
+    document.querySelector('.pastillas a#wpp').href = productos[productKey].contacto;
     document.querySelector('.pastillas a').style.background = productos[productKey].color;
 
     //Mapea cada uno de los contenedores
